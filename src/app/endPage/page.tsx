@@ -17,7 +17,7 @@ enum Restaurants {
 enum Afters {
   adv = ' no Adventure Motel',
   beer = ' em algum barzinho',
-  home = ' em casa',
+  home = ' em casa bem agarradinhos',
 }
 
 interface Timer {
@@ -70,7 +70,6 @@ const EndPage = () => {
   return (
     <div className="h-screen flex items-center justify-center">
       <Background />
-
       <div className="w-[500px] bg-[#fdf5ef] rounded-3xl flex">
         <Typography className="text-xl font-bold text-blue-900">
           Minha princesa, não tive tempo de elaborar uma coleção de fotos,
@@ -88,10 +87,11 @@ const EndPage = () => {
           que sou a pessoa mais feliz desse mundo e sim, todo esse tempo foi
           namorando você ❤️ Quero agradecer por cada segundo do seu lado porque
           assim eu consigo expressar um pouquinho do que eu sinto, você é a
-          coisinha mais especial do mundo todo. Amo você demais!
+          coisinha mais especial do mundo todo. Amo você demais, Feliz 17 meses
+          amorzinhaaa!!!
           <br />
           <br />E por último, mas não menos importante, gostaria de deixar
-          registrado que teremos um jantar romântica no restaurante{' '}
+          registrado que teremos um jantar romântico no restaurante{' '}
           <span className="text-red-500">{Restaurants[restaurant]}</span> e
           depois um after maravilhoso
           <span className="text-red-500">{Afters[after]}</span>
