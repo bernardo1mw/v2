@@ -1,9 +1,11 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
+import Background from '../components/Background';
 
 const OptionsPage = () => {
   return (
-    <div className="backgroundImage h-screen flex items-center justify-center">
+    <div className="h-screen flex items-center justify-center">
+      <Background />
       <div className="w-[500px] h-[500px] bg-[#fdf5ef] rounded-3xl">
         <div>
           <p className="question text-2xl font-bold text-center text mt-4 text-rose-400">
@@ -17,12 +19,14 @@ const OptionsPage = () => {
         <div className="w-full h-auto flex flex-row pt-10">
           <div className="w-1/2 text-lg px-4 ">
             <button className="bg-rose-300 text-white rounded-2xl px-2">
-            <Link  href="/newOptions">Quero comer em algum lugar novo!! 😋</Link>
+              <Link href="/newOptions">
+                Quero comer em algum lugar novo!! 😋
+              </Link>
             </button>
           </div>
           <div className="w-1/2 text-lg px-4 ">
             <button className="bg-rose-300 text-white rounded-2xl px-2">
-            <Link  href="/classicOptions">Quero ir nos clássicos 😌</Link>
+              <Link href="/classicOptions">Quero ir nos clássicos 😌</Link>
             </button>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Typography } from '@mui/material';
+import Background from '../components/Background';
 
 enum Restaurants {
   pop = 'Pop Vegan',
@@ -67,7 +68,9 @@ const EndPage = () => {
 
   const restaurant = searchParams.get('restaurant');
   return (
-    <div className="backgroundImage h-screen flex items-center justify-center">
+    <div className="h-screen flex items-center justify-center">
+      <Background />
+
       <div className="w-[500px] bg-[#fdf5ef] rounded-3xl flex">
         <Typography className="text-xl font-bold text-blue-900">
           Minha princesa, não tive tempo de elaborar uma coleção de fotos,

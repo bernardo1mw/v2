@@ -7,13 +7,16 @@ import beer from '../../images/beer.jpeg';
 import home from '../../images/home.png';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
+import Background from '../components/Background';
 
 const AfterDinnerPage = () => {
   const searchParams = useSearchParams();
 
   const param = searchParams.get('restaurant');
   return (
-    <div className="backgroundImage h-screen flex items-center justify-center">
+    <div className=" h-screen flex items-center justify-center">
+      <Background />
+
       <div className="w-[1000px] bg-[#fdf5ef] rounded-3xl flex">
         <Card className="w-1/3 mx-10">
           <Link
